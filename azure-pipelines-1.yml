@@ -12,10 +12,10 @@ variables:
 - group: OptiSuite
 
 steps:
-- script: $(enable_sonar)
+- script: test
   displayName: 'Run a one-line script'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
+    echo $(enable_sonar)
   displayName: 'Run a multi-line script'
