@@ -6,11 +6,13 @@
 trigger:
 - main
 
-pool:
-  vmImage: ubuntu-latest
+pool: cm-agent-pool
+
+variables:
+- group: OptiSuite
 
 steps:
-- script: echo Hello, world!
+- script: $(enable_sonar)
   displayName: 'Run a one-line script'
 
 - script: |
