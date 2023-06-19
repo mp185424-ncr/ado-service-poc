@@ -12,7 +12,7 @@ variables:
 - group: OptiSuite
 
 steps:
-- script: test
+- script: echo test
   displayName: 'Run a one-line script'
 
 - script: |
